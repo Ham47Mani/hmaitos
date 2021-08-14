@@ -1,0 +1,511 @@
+/* 
+ * Template Name      : Hmaitos Studio
+ * Template Version   : V 1.0.0
+ * Template Url       : .....................
+ * Language           : HTML5, CSS3, jQuery 
+ * Contact Me : Skaype   :- Hammani
+ *				Facebook :- Ham mani
+ *				Email    :- Ham47mani@gmail.com
+ */
+
+/*============= Start Main Rules =============*/
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+         -o-box-sizing: border-box;
+            box-sizing: border-box;
+}
+body { --main-color: #F64747; overflow: hidden; font-family: 'Open Sans', sans-serif; margin: 0 }
+.container { width: 80%; margin: auto; position: relative }
+.overlay { background-color: rgba(45, 55, 61, .85); width: 100%; height: 100%}
+/*============= End Main Rules =============*/
+
+/*============= Start Tool Box Color =============*/
+.option-box { position: fixed; top: 120px; left: 0; color: #FFF; z-index: 99999}
+.option-box .color-option { 
+    float: left;
+    background-color: rgba(2, 2, 2, .5);
+    border: 3px solid var(--main-color);
+    padding: 10px;
+    width: 200px;
+    display: none
+}
+.option-box .color-option h4 { margin-top: 5px}
+.option-box .color-option ul li  { 
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%;
+    display: inline-block; 
+    margin-right: 3px; 
+    cursor: pointer 
+}
+.option-box .gear-check { padding: 5px; cursor: pointer }
+/*============= End Tool Box Color =============*/
+
+/*============= Start Header =============*/
+header { background-image: url('../img/header/bg.png') }
+
+/*------ NavBar ------*/
+header nav { 
+    padding: 20px 0;
+    overflow: hidden;
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+header nav p { float: left; padding: 0; margin: 0}
+header nav p span { font-weight: bold}
+header nav span { float: right}
+header nav span i { margin: 0px 5px; cursor: pointer}
+
+/*------ Start Intro ------*/
+header .intro h1 { margin: 0; font-weight: 800; font-size: 50px }
+header .intro p { margin: 10px 0 20px; font-size: 20px; line-height: 1.7; color: #CCC }
+header .intro .btn button {
+    background-color: transparent;
+    padding: 12px 0;
+    width: 180px;
+    font-size: 14px;
+    border: 1px solid #909090;
+    margin: 0 10px;
+    border-radius: 10px
+}
+header .overlay > span i {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    cursor: pointer;
+}
+
+/*===> Smart Phones And Tablet <===*/
+@media (max-width: 767px){
+    header .intro h1 { font-size: 30px}
+    header .intro p { font-size: 14px}
+    header .intro .btn button { width: 150px; margin-bottom: 20px}
+}
+/*============= End Header =============*/
+
+/*============= Start Features =============*/
+.features { background-color: #EEE; overflow: hidden }
+.features .feat { width: 22%; float: left; margin-right: 4%; cursor: pointer }
+.features .feat:last-child { margin-right: 0}
+.features .feat i { 
+    width: 100px; 
+    height: 100px; 
+    border: 1px solid #AAA;
+    line-height: 100px; 
+    border-radius: 50%;
+}
+.features .feat:hover i { color: #FFF; background: var(--main-color) }
+.features .feat h3 { color: #555}
+.features .feat p { color: #777; line-height: 1.7}
+
+/*===> Smart Phones And Tablet <===*/
+@media (max-width: 767px){
+    .features .feat { width: 90%; margin: auto }
+}
+/*============= End Features =============*/
+
+/*============= Start Subscribe =============*/
+.subscribe { background-image: url("../img/subscribe/subscribe.png"); background-attachment: fixed }
+.subscribe form { width: 700px; margin: 30px auto }
+.subscribe form input {
+    outline: none;
+    font-size: 14px;
+    width: 350px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #666
+}
+.subscribe form input:focus { outline: none }
+.subscribe form button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+/*===> Smart Phones And Tablet <===*/
+@media (max-width: 767px){
+    .subscribe .container form { width: 90%; margin: 0 }
+    .subscribe .container form input { margin-bottom: 20px; width: 95% }
+    .subscribe .container form button { margin-left: 0}
+}
+
+/*===> Small Screen <===*/
+@media (min-width: 768px) and (max-width: 991px){
+    .subscribe .container form { margin: 30px -36px }
+}
+/*============= End Subscribe =============*/
+
+/*============= Start Our Work =============*/
+.work { background-color: #EEE }
+
+/*------ Info ------*/
+.work .info { width: 500px; margin: auto }
+.work .info h2 { font-size: 45px; color: #555; margin: 0 0 15px; font-weight: 500}
+.work .info p { color: #999; margin-bottom: 40px}
+
+/*------ Item ------*/
+.work .item-box { overflow: hidden}
+.work .item-box .item {
+    position: relative;
+    float: left;
+    width: 32%;
+    overflow: hidden;
+    margin-left: 1.33333%;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    height: 300px
+}
+.work .item-box .item img { width: 100%; height: 100%}
+.work .item-box .item .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    opacity: .9;
+    color: #FFF;
+    border-radius: 20px;
+    display: none
+}
+.work .item-box .item:hover .over { display: block}
+.work .item-box .over h3 { margin-top: 50px; margin-bottom: 0 }
+.work .item-box .over p { line-height: 1.8; margin: 20px 0 35px}
+.work .item-box .over button { 
+    background: transparent; 
+    border: 1px solid #FFF; 
+    padding: 5px 25px; 
+    border-radius: 10px 
+}
+.work .item-box .over button:hover { background: #FFF; border: 1px solid #FFF; color: var(--main-color) }
+.work .hover-btn {
+    width: 200px;
+    border: 1px solid #CCC;
+    background: transparent;
+    color: #555;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px
+}
+
+/*===> Smart Phones And Tablet <===*/
+@media (max-width: 767px){
+    .work .info { width: 95% }
+    .work .info h2 { font-size: 35px}
+    .work .item-box .item { width: 95%; float: none; margin-left: 0 }
+}
+
+/*===> Small Screen <===*/
+@media (min-width: 768px) and (max-width: 991px){
+    .work .item-box .item { width: 48%; margin-left: 2% }
+}
+/*============= End Our Work =============*/
+
+/*============= Start Testimonials =============*/
+.testmonials { background-image: url("../img/testmonials/bg.png"); background-attachment: fixed }
+
+/*------ Client ------*/
+.testmonials .client img { width: 100px; height: 100px; border-radius: 50%; border: 1px solid #FFF }
+.testmonials .client p { line-height: 2; font-size: 20px; font-style: italic }
+.testmonials .client span { font-size: 20px; font-weight: bold}
+.testmonials .fa-chevron-right, .testmonials .fa-chevron-left { 
+    position: absolute; 
+    top: 50%; 
+    color: #CCC; 
+    cursor: pointer
+}
+.testmonials .fa-chevron-right { right: 0 }
+.testmonials .fa-chevron-left { left: 0 }
+
+/*===> Smart Phones And Tablet <===*/
+@media (max-width: 767px){
+    .testmonials .container .client img { width: 50px; height: 50px}
+    .testmonials .container .client p { font-size: 10px}
+    .testmonials .container .client span { font-size: 16px}
+    .testmonials .container .fa-chevron-right, .testmonials .container .fa-chevron-left { font-size: 15px}
+}
+
+/*===> Small Screen <===*/
+@media (min-width: 768px) and (max-width: 991px){
+    .testmonials .container .client p { font-size: 14px}
+}
+/*============= End Testimonials =============*/
+
+/*============= Start Our Team =============*/
+.our-team { background-color: #EEE }
+
+/*------ Info ------*/
+.our-team .info { width: 500px; margin: auto }
+.our-team .info h2 { font-size: 45px; color: #555; margin: 15px 0; font-weight: 500}
+.our-team .info p { color: #999; margin-bottom: 40px; line-height: 1.7}
+
+/*------ Team ------*/
+.our-team .the-team { overflow: hidden}
+.our-team .the-team .persone { float: left; width: 24%; margin-left: 1%; color: #888; padding-top: 20px }
+.our-team .the-team .active { color: #333}
+.our-team .the-team .persone img {    
+    filter: gray;
+    -webkit-filter: grayscale(1);
+       -moz-filter: grayscale(1);
+        -ms-filter: grayscale(1);
+         -o-filter: grayscale(1);
+            filter: grayscale(1)
+}
+.our-team .the-team .active img {
+    filter: none;
+    -webkit-filter: grayscale(0);
+       -moz-filter: grayscale(0);
+        -ms-filter: grayscale(0);
+         -o-filter: grayscale(0);
+            filter: grayscale(0);
+    -webkit-transform: scale(1.2,1.2);
+       -moz-transform: scale(1.2,1.2);
+        -ms-transform: scale(1.2,1.2);
+         -o-transform: scale(1.2,1.2);
+            transform: scale(1.2,1.2)
+    
+}
+.our-team .the-team .persone p { font-size: 13px}
+.our-team .the-team .active .social-icons .fa-facebook { background-color: #3B5998}
+.our-team .the-team .active .social-icons .fa-twitter { background-color: #55ACEE}
+.our-team .the-team .active .social-icons .fa-google-plus { background-color: #DC4E41}
+
+/*===> Smart Phones And Tablet <===*/
+@media (max-width: 767px){
+    .our-team .info { width: 95% }
+    .our-team .info h2 { font-size: 35px}
+    .our-team .info p { font-size: 14px}
+    .our-team .the-team .persone { float: none; width: 96%; margin-left: 0 }
+}
+
+/*===> Small Screen <===*/
+@media (min-width: 768px) and (max-width: 991px){
+    .our-team .the-team .persone { width: 48%; margin-left: 2% }
+    .our-team .the-team .active img { width: 200px; height: 200px}
+}
+
+/*===> Medium Screen <===*/
+@media (min-width: 992px) and (max-width: 1199px){
+    .our-team .the-team .persone{ width: 23%; margin: 0 1% 20px }
+}
+/*============= End Our Team =============*/
+
+/*============= Start Contact Us =============*/
+.contact { background-image: url("../img/contact/bg.png"); background-attachment: fixed }
+
+/*------ Info ------*/
+.contact > .info { width: 500px; margin: auto }
+.contact > .info h2 { font-size: 45px; margin: 15px 0; font-weight: 500}
+.contact > .info p { color: #CCC; margin-bottom: 40px}
+
+/*------ Form ------*/
+.contact form { width: 700px; text-align: center; margin: 10px auto}
+.contact form input[type="text"], .contact form input[type="email"] { 
+    width: 48%;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    background: transparent;
+    color: #EEE
+}
+.contact form input[type="email"] { float: left}
+.contact form input:active, .contact form input:focus, .contact form textarea:active,
+.contact form textarea:focus{ border: none}
+.contact form input[type="text"] { float: right}
+.contact form textarea { 
+    margin-top: 20px;
+    width: 100%;
+    padding: 5px 10px;
+    height: 140px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    background: transparent;
+    color: #CCC
+}
+.contact form .info { overflow: hidden; margin-top: 20px}
+.contact form .info button {
+    float: left;
+    width: 200px;
+    border: 1px solid #CCC;
+    background: transparent;
+    color: #EEE;
+    border-radius: 10px;
+    padding: 10px;
+}
+.contact form .info .form-icons { float: right }
+.contact form .info .form-icons .fa-facebook { background-color: #3B5998 }
+.contact form .info .form-icons .fa-twitter { background-color: #55ACEE }
+.contact form .info .form-icons .fa-google-plus { background-color: #DC4E41 }
+.contact form .info .form-icons .fa-dribbble { background-color: #ea4c89 }
+.contact form .info .form-icons .fa-behance { background-color: #1769ff }
+
+/*===> Smart Phones And Tablet <===*/
+@media (max-width: 767px){
+    .contact .info h2 { font-size: 35px; margin-bottom: 0 }
+    .contact .info p { font-size: 14px}
+    .contact form { width: 98%}
+    .contact form input[type="email"], .contact form input[type="text"] { 
+        float: none; 
+        width: 100%; 
+        margin-bottom: 10px
+    }
+    .contact form textarea { margin-top: 0}
+    .contact form .info button { width: 100%; float: none; margin-bottom: 15px}
+    .contact form .info .form-icons { width: 100%; float: none }
+}
+
+/*===> Small Screen <===*/
+@media (min-width: 768px) and (max-width: 991px){
+    .contact form { width: 600px; margin: 20px auto }
+}
+/*============= End Contact Us =============*/
+
+/*============= Start Footer =============*/
+footer { background-color: #3B434C; color: #CCC; overflow: hidden; padding: 20px 0; font-size: 14px}
+footer .copyright { float: left}
+footer .design { float: right}
+
+/*===> Smart Phones And Tablet <===*/
+@media (max-width: 767px){
+    footer { font-size: 10px}
+}
+/*============= End Footer =============*/
+
+/*============= Start Loading =============*/
+.loading{
+    position: absolute;
+    background-color: #222;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999
+}
+
+.spinner { margin: 100px auto; width: 40px; height: 40px; position: relative; top: 25%; left: 0; }
+
+.cube1, .cube2 {
+    background-color: #F64747;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-cubemove 1.8s infinite ease-in-out;
+    animation: sk-cubemove 1.8s infinite ease-in-out;
+}
+.cube2 { -webkit-animation-delay: -0.9s; animation-delay: -0.9s }
+@-webkit-keyframes sk-cubemove {
+  25% { -webkit-transform: translateX(42px) rotate(-90deg) scale(0.5) }
+  50% { -webkit-transform: translateX(42px) translateY(42px) rotate(-180deg) }
+  75% { -webkit-transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5) }
+  100% { -webkit-transform: rotate(-360deg) }
+}
+@keyframes sk-cubemove {
+    25% { transform: translateX(42px) rotate(-90deg) scale(0.5); } 
+    50% { transform: translateX(42px) translateY(42px) rotate(-179deg); } 
+    50.1% { transform: translateX(42px) translateY(42px) rotate(-180deg); } 
+    75% { transform: translateX(0px) translateY(42px) rotate(-270deg) scale(0.5); } 
+    100% { transform: rotate(-360deg); }
+}
+/*============= End Loading =============*/
+
+/*============= Start My Freemwork =============*/
+.text-center { text-align: center}
+.upper { text-transform: uppercase}
+.clear-fix { clear: both}
+.hidden { display: none}
+.list-unstyled { list-style: none; margin: 0; padding: 0 }
+.main-color { color: var(--main-color) }
+.main-bg-color { background: var(--main-color) }
+.nicescroll-rails > div  { background-color: var(--main-color) !important }
+/*============= End My Freemwork =============*/
+
+/*============= Start My Regroupe Style =============*/
+header, .subscribe, .testmonials, .contact {
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+        -ms-background-size: cover;
+         -o-background-size: cover;
+            background-size: cover;
+    color: #FFF
+}
+
+.features, .subscribe .container, .work, .testmonials .container,
+.our-team, .contact .container { padding-top: 70px; padding-bottom: 40px }
+
+.features .feat i, .work .item-box .over button {
+	-webkit-transition: all .7s ease-in-out;
+       -moz-transition: all .7s ease-in-out;
+        -ms-transition: all .7s ease-in-out;
+         -o-transition: all .7s ease-in-out;
+            transition: all .7s ease-in-out
+}
+
+.our-team .the-team .persone .social-icons i, .contact form .info .form-icons i {
+    font-size: 16px;
+    background-color: #666;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: #CCC;
+    border-radius: 50%;
+    cursor: pointer
+}
+/*============= End My Regroupe Style =============*/
+
+/*============= Start Event Hover =============*/
+/* Radial Out */
+.hover-btn {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+.hover-btn:before {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color) !important;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hover-btn:hover { color: white}
+.hover-btn:hover:before  {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+}
+/*============= End Event Hover =============*/
