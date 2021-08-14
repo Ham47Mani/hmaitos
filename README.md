@@ -13,7 +13,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="">
+  <a href="https://ham47mani.github.io/hmaitos/">
     <img src="img/logo.png" alt="Logo" width="80" height="80">
   </a>
 
@@ -22,11 +22,11 @@
   <p align="center">
     An awesome & simple HTML template 
     <br />
-    <a href="">View Demo</a>
+    <a href="https://ham47mani.github.io/hmaitos/">View Demo</a>
     ·
-    <a href="">Report Bug</a>
+    <a href="https://github.com/Ham47Mani/hmaitos/issues">Report Bug</a>
     ·
-    <a href="">Request Feature</a>
+    <a href="https://github.com/Ham47Mani/hmaitos/issues">Request Feature</a>
   </p>
 </p>
 
